@@ -39,7 +39,7 @@
 
 !! URxvt Appearance
 URxvt.background: [80]#141c21
-URxvt.font:xft:Source Code Pro Black:size=12,xft:DejaVu Sans:pixelsize=12
+URxvt.font:xft:Source Code Pro Nerd Black:size=12,xft:DejaVu Sans:pixelsize=12
 URxvt.letterSpace: 0
 URxvt.lineSpace: 0
 URxvt.cursorBlink: true
