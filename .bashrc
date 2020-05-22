@@ -57,5 +57,10 @@ function parse_git_dirty {
 		echo ""
 	fi
 }
+LBLUE="\[$(tput setaf 12)\]"
+CYAN="\[$(tput setaf 6)\]"
+BLUE="\[$(tput setaf 4)\]"
+RESET="\[$(tput sgr0)\]"
 
-export PS1="┌◊\h\W\[\e[34m\]\`parse_git_branch\`\[\e[m\]\[\e[34m\]❄\[\e[m\] "
+export PS1="${BLUE}└─►${LBLUE}\h \W ${CYAN}\`parse_git_branch\`${LBLUE}❄${RESET} "
+
