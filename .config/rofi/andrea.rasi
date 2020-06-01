@@ -24,10 +24,11 @@
 window {
     background-color: @bg;
     border:           0;
-    padding:          0;
-    anchor:           north;
-    location:         north;
-    y-offset:         0%;
+    padding:          5;
+    anchor:	      center;
+    orientation:      vertical;
+    location:         center;
+    width:            50%;
 }
 
 mainbox {

@@ -8,6 +8,10 @@
 #Launch Layout config
 #[[ -f ~/.screenlayout/layout.sh ]] && /bin/bash ~/.screenlayout/layout.sh
 
+#Adds variables to the path
+AndroidToolChain="${HOME}/toolchain/tools/bin"
+scripts="${HOME}/scripts"
+export PATH=$PATH:$AndroidToolChain:$scripts
 
 alias ls='ls --color=auto'
 #Generated at http://ezprompt.net/
@@ -17,7 +21,7 @@ function parse_git_branch() {
 	if [ ! "${BRANCH}" == "" ]
 	then
 		STAT=`parse_git_dirty`
-		echo "[${BRANCH}${STAT}]"
+		echo "[${BRANCH}${STAT}] "
 	else
 		echo ""
 	fi
@@ -62,5 +66,5 @@ CYAN="\[$(tput setaf 6)\]"
 BLUE="\[$(tput setaf 4)\]"
 RESET="\[$(tput sgr0)\]"
 
-export PS1="${BLUE}└─►${LBLUE}\h \W ${CYAN}\`parse_git_branch\`${LBLUE}❄${RESET} "
+export PS1="${BLUE}└─►${LBLUE}\h \w ${CYAN}\`parse_git_branch\`${LBLUE}❄${RESET} "
 

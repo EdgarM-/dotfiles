@@ -1,5 +1,5 @@
 " Disable compatibility mode with vi
-set nocompatible
+"set nocompatible
 "Statusline appears all the time
 set laststatus=2
 " Show relative line number
